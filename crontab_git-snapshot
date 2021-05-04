@@ -22,4 +22,8 @@
 #
 # m h  dom mon dow   command
 PATH=/usr/local/bin/:/bin:/usr/bin
-*/5 * * * * cd ~/rhythm_dev/ParallelBashJobsEngine/ && /usr/local/bin/git-snapshot >> ~/git-snapshot.out 2>&1
+
+GIT_DIR=~/rhythm_dev/ParallelBashJobsEngine/
+
+*/5 * * * * cd $GIT_DIR && /usr/local/bin/git-snapshot >> ~/git-snapshot.out 2>&1
+* * */1 * * cd $GIT_DIR git reflog expire --expire=30.days refs/stash

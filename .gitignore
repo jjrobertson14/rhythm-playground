@@ -568,7 +568,6 @@
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-sbt/actions_2.12/1.5.5/actions_2.12-1.5.5.pom
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/apache/apache/21/apache-21.pom
 /world-screamer/project/build.properties
-/world-screamer/build.sbt
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/com/github/ben-manes/caffeine/caffeine/2.8.5/caffeine-2.8.5.jar
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/com/github/ben-manes/caffeine/caffeine/2.8.5/caffeine-2.8.5.pom
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.4.1/checker-qual-3.4.1.jar
@@ -645,7 +644,6 @@
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/apache/logging/log4j/log4j-slf4j-impl/2.11.2/log4j-slf4j-impl-2.11.2.pom
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-sbt/logic_2.12/1.5.5/logic_2.12-1.5.5.jar
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-sbt/logic_2.12/1.5.5/logic_2.12-1.5.5.pom
-/world-screamer/src/main/scala/Main.scala
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-sbt/main-settings_2.12/1.5.5/main-settings_2.12-1.5.5.jar
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-sbt/main-settings_2.12/1.5.5/main-settings_2.12-1.5.5.pom
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-sbt/main_2.12/1.5.5/main_2.12-1.5.5.jar
@@ -666,7 +664,6 @@
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-sbt/protocol_2.12/1.5.5/protocol_2.12-1.5.5.pom
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.pom
-/world-screamer/README.md
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/net/openhft/root-parent-pom/1.1.13/root-parent-pom-1.1.13.pom
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-sbt/run_2.12/1.5.5/run_2.12-1.5.5.jar
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-sbt/run_2.12/1.5.5/run_2.12-1.5.5.pom
@@ -716,7 +713,6 @@
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-sbt/tasks_2.12/1.5.5/tasks_2.12-1.5.5.pom
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-sbt/template-resolver/0.1/template-resolver-0.1.jar
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-sbt/template-resolver/0.1/template-resolver-0.1.pom
-/world-screamer/src/test/scala/Test1.scala
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-agent/1.5.5/test-agent-1.5.5.jar
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-agent/1.5.5/test-agent-1.5.5.pom
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar

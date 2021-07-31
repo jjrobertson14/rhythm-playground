@@ -18,18 +18,18 @@ object Calc {
         println("Evaluation with x=5, y=7: " + eval(exp, env))
         println("Derivative relative to x:\n " + derive(exp, "x"))
         println("Derivative relative to y:\n " + derive(exp, "y"))
-        
-        // TODO Now I'll try having the derivation evaluated!
-        val deriveExp: Tree = Sum(Sum(Var("x"), Var("x")), Sum(Const(7), Var("y")))
+
+        // Now have the derivation evaluated!
+        val deriveExp: Tree = Derive(Sum(Sum(Var("x"), Var("x")), Sum(Const(7), Var("y"))))
         val deriveEnv: Environment = { case "x" => 5 case "y" => 7 }
         println("\n\n\n\n\n")
         println("Now attempting to evaluate the derivation...")
         println("Expression: " + exp)
         println("Evaluation with x=5, y=7: " + eval(exp, env))
-        println("Derivative relative to x:\n " + derive(exp, "x"))
-        println("Derivative relative to y:\n " + derive(exp, "y"))
+        println("Derivative relative to x:\n " + evaluateDerivation(exp, env, "x"))
+        println("Derivative relative to y:\n " + evaluateDerivation(exp, env, "y"))
     }
-    
+
     def eval(t: Tree, env: Environment): Int = t match {
         case Sum(l, r) => eval(l, env) + eval(r, env)
         case Var(n)    => env(n)
@@ -40,5 +40,10 @@ object Calc {
         case Sum(l, r) => Sum(derive(l, v), derive(r, v))
         case Var(n) if (v == n) => Const(1)
         case _ => Const(0)
+    }
+
+    def evaluateDerivation(t: Tree, env: Environment, relativeTo: String): Int = t match {
+        case Derive(subtree) => evaluateDerivation(subtree, env, relativeTo)
+        case Sum(l, r) => eval(derive(l, relativeTo), env) + eval(derive(r, relativeTo), env) 
     }
 }

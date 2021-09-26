@@ -1,6 +1,5 @@
-import kotlin.math.absoluteValue
-
 fun main() {
+//    setAndListExample
 //    createMapExamples()
 //    checkDoubleValueInMapExample()
 }
@@ -25,6 +24,7 @@ private fun createMapExamples() {
         "Bewitched" to 254,
         "That '70s Show" to 200
     )
+    println(tvShows)
 }
 
 /*
@@ -39,8 +39,8 @@ The clear() function removes all elements from a collection.
 You’ve now covered the second major collection that exists in Kotlin as well as many other programming languages. Feel free to utilize the empty Review.kt file and output terminal on the right to hone your understanding of sets and practice writing Kotlin code.
  */
 fun setAndListExample() {
-    var uniqueParticipants = mutableSetOf<String>()
-    var participants = listOf("elePHPant", "Gopher", "Lenny", "Moby Dock", "Codey", "Gopher")
+    val uniqueParticipants = mutableSetOf<String>()
+    val participants = listOf("elePHPant", "Gopher", "Lenny", "Moby Dock", "Codey", "Gopher")
 
     // Write your code below 🎤
     uniqueParticipants.addAll(participants)

@@ -1,7 +1,18 @@
 fun main() {
+
+
+//    `for loop with array index + value`()
 //    setAndListExample
 //    createMapExamples()
 //    checkDoubleValueInMapExample()
+}
+
+private fun `for loop with array index + value`() {
+    // for loop with array index + value
+    val array = arrayOf("blep", "yap")
+    for ((index, value) in array.withIndex()) {
+        println("the element at $index is $value")
+    }
 }
 
 private fun checkDoubleValueInMapExample() {

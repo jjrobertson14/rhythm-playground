@@ -755,3 +755,5 @@
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-persist_2.12/1.5.7/zinc-persist_2.12-1.5.7.pom
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc_2.12/1.5.7/zinc_2.12-1.5.7.jar
 /null/Coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc_2.12/1.5.7/zinc_2.12-1.5.7.pom
+/lib/
+/.idea/

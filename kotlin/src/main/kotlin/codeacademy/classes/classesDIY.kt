@@ -5,30 +5,21 @@ class Calculator(name: String) {
         println("Owner of calculator is $name")
     }
 
-    fun add(x: Int, y: Int): Int {
-        return x + y
-    }
+    fun add(x: Int, y: Int) =
+        x + y
 
-    fun subtract(x: Int, y: Int): Int {
-        return x - y
-    }
+    fun subtract(x: Int, y: Int) =
+        x - y
 
-    fun multiply(x: Int, y: Int): Int {
-        return x * y
-    }
+    fun multiply(x: Int, y: Int) =
+        x * y
 
-    fun divide(numerator: Int, denominator: Int): Int {
+    fun divide(numerator: Int, denominator: Int) =
         if (denominator == 0) throw RuntimeException("Attempted to divide by 0, value of denominator must not be 0")
-        return numerator / denominator
-    }
+        else numerator / denominator
 
-    fun power(x: Int, exponent: Int): Int {
-        var result = 1
-        for (i in 1..exponent) {
-            result *= x
-        }
-        return result
-    }
+    fun power(x: Int, exponent: Int) =
+        (1..exponent).fold(1, operation = {acc, _ -> acc * x})
 }
 
 fun main() {

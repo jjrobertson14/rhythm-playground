@@ -1,14 +1,16 @@
 fun main() {
-
-
-//    `for loop with array index + value`()
+    `for loop with array and set index + value`()
 //    setAndListExample
 //    createMapExamples()
 //    checkDoubleValueInMapExample()
 }
 
-private fun `for loop with array index + value`() {
+private fun `for loop with array and set index + value`() {
     // for loop with array index + value
+    val set = setOf("blop", "bop")
+    for ((index, value) in set.withIndex()) {
+        println("the element of set at $index is $value")
+    }
     val array = arrayOf("blep", "yap")
     for ((index, value) in array.withIndex()) {
         println("the element at $index is $value")
